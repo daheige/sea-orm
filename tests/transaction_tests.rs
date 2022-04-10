@@ -337,9 +337,6 @@ pub async fn transaction_closure_rollback() -> Result<(), DbErr> {
 
                 // This line won't be reached
                 unreachable!();
-
-                #[allow(unreachable_code)]
-                Ok(())
             })
         })
         .await;
